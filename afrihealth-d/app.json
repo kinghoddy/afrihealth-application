@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "afrihealth Driver",
+    "slug": "afridriver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/adaptive-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0077dd"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.kinghoddy.afridriver",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCDO7ghQKlCUBOb-SzUjaSiQ17GRw9sVTs"
+      },
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "afridriver"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.kinghoddy.afridriver",
+      "versionCode": 1,
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0077dd",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCDO7ghQKlCUBOb-SzUjaSiQ17GRw9sVTs"
+        }
+      }
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#ffffff",
+      "barStyle": "dark-content"
+    },
+    "plugins": [
+      "expo-system-ui"
+    ]
+  }
+}

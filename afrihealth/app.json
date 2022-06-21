@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "afrihealth",
+    "slug": "afrihealth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/adaptive-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6600ee"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.kinghoddy.afrihealth",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCDO7ghQKlCUBOb-SzUjaSiQ17GRw9sVTs"
+      },
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "afrihealth"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.kinghoddy.afrihealth",
+      "versionCode": 1,
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCDO7ghQKlCUBOb-SzUjaSiQ17GRw9sVTs"
+        }
+      }
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#ffffff",
+      "barStyle": "dark-content"
+    },
+    "plugins": [
+      "expo-system-ui"
+    ]
+  }
+}
